@@ -1,0 +1,132 @@
+@import 'setup';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+header {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.headerBackground {
+    background-image: url(.././assets/headerBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+}
+
+.hello {
+    padding-top: 160px;
+    color: #FFFFFF;
+}
+
+.hello h1 {
+    font-size: 130px;
+    margin: 0;
+}
+
+.hello h2 {
+    font-size: 80px;
+}
+
+.hello p {
+    font-size: 40px; 
+}
+
+header nav {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 3px 1px rgba(0, 0, 0, 0.08);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000000;
+}
+
+main h2 {
+    font-size: 76px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+section {
+    padding: 140px 0;
+}
+
+.aboutFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutImage {
+    width: 35%;
+}
+
+.aboutDescription {
+    width: 60%;
+    line-height: 30px;
+}
+
+.aboutDescription p {
+    padding: 0 10px 10px 10px;
+}
+
+.skills, 
+.contact {
+    background-color: #333435;
+    color: #FFFFFF
+}
+
+.skills ul {
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #000000;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px;
+}
