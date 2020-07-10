@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cliff St-Onge</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d45d01558f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="headerBackground">
             <div class="hello wrapper">
                 <h1>Hello,</h1>
@@ -20,18 +22,18 @@
 
         <nav>
             <ul class="wrapper">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="about wrapper">
-            <h2>About Me</h2>
+            <h2 id="about">About Me</h2>
 
             <div class="aboutFlex">
                 <div class="aboutImage">
@@ -39,52 +41,121 @@
                 </div>
 
                 <div class="aboutDescription">
-                    <p>Hi, I'm Cliff.</p>
-                    <p>I have traced the Rebel spies to her. Now she is my only link to finding their secret base. You don't believe in the Force, do you?</p>
-                    <p>He is here. A tremor in the Force. The last time I felt it was in the presence of my old master. I’m surprised you had the courage to take the responsibility yourself.</p>
+                    <p>Hi, I’m Cliff and I like to build things. </p>
+
+                    <p>As a child I was always playing with Lego and blocks. As I got older I started taking apart watches and clocks to see how they tick (I also like puns). I just loved seeing how things were put together. And now I get to build things in code.</p>
+
+                    <p>As a graduate from the Juno College Front-end Web Development Immersive program I have a solid background in HTML, CSS, JavaScript, and Responsive Design.</p>
+
+                    <p>I am friendly, calm and detail oriented. I love a good movie, and an even better book. I have excellent communication skills from my university degree in English and I am also bilingual in French.</p>
+                    
+                    <p class="connect"><span>Let's Connect!</span></p>
+
+                    <ul>
+                        <li><a href="https://twitter.com/cliffstonge/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/cliffstonge/" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/cliffstonge/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section class="skills">
             <div class="wrapper">
-                <h2>Skills</h2>
+                <h2 id="skills">Skills</h2>
+                <div class="grid">
+                    <div>
+                        <i class="devicon-html5-plain"></i>
+                        <p>HTML5</p>
+                    </div>
 
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3 & Sass</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>React.js</li>
-                    <li>Git & Github</li>
-                    <li>Resposive Design</li>
-                </ul>
+                    <div>
+                        <i class="devicon-css3-plain"></i>
+                        <p>CSS3</p>
+                    </div>
+
+                    <div>
+                        <i class="devicon-sass-original"></i>
+                        <p>Sass</p>
+                    </div>
+
+                    <div>
+                        <i class="devicon-javascript-plain"></i>
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div>
+                        <i class="devicon-jquery-plain"></i>
+                        <p>jQuery</p>
+                    </div>
+
+                    <div>
+                        <i class="devicon-react-original"></i>
+                        <p>React</p>
+                    </div>
+
+                    <div>
+                        <i class="devicon-github-plain"></i>
+                        <p>Github</p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Responsive Design</p>   
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section class="divider">
+            
+        </section>
+
         <section class="portfolio wrapper">
-            <h2>Portfolio</h2>
+            <h2 id="portfolio">Portfolio</h2>
 
-            <div>
-                <a href="">Chonk or Not?</a>
-            </div>
+            <div class="grid">
+                <div class="project">
+                    <a href="https://teamjuicywatermelon.github.io/PodcastCommuter/" target="_blank"><img src="./assets/podcastCommuter.jpg" alt="Screenshot of Podcast Commuter website."></a>
+                    <h3>Podcast Commuter</h3>
+                    <p>A team effort to build a React app that finds a podcast to match a user's commute time.</p>
+                    <div class="link">
+                        <a href="https://teamjuicywatermelon.github.io/PodcastCommuter/" target="_blank">See the live site</a>
+                    </div>
+                </div>
 
-            <div>
-                <a href="">Pirate Card Draw Game</a>
-            </div>
+                <div class="project">
+                    <a href="https://cliffstonge.github.io/suggest-a-book/" target="_blank"><img src="./assets/suggestABook.jpg" alt="Screenshot of Suggest a Book website."></a>
+                    <h3>Suggest a Book</h3>
+                    <p>A React based app to suggest a book based on preferred genre.</p>
+                    <div class="link">
+                        <a href="https://cliffstonge.github.io/suggest-a-book/" target="_blank">See the live site</a>
+                    </div>
+                </div>
 
-            <div>
-                <a href="">Suggest a Book</a>
-            </div>
+                <div class="project">
+                    <a href="https://cliffstonge.github.io/chonk-or-not/" target="_blank"><img src="./assets/chonkOrNot.jpg" alt="Screenshot of Chonk or Not website."></a>
+                    <h3>Chonk or Not?</h3>
+                    <p>A funny jQuery based "quiz" site of adorable chonky animals.</p>
+                    <div class="link">
+                        <a href="https://cliffstonge.github.io/chonk-or-not/" target="_blank">See the live site</a>
+                    </div>
+                </div>
 
-            <div>
-                <a href="">Podcast Commuter</a>
+                <div class="project">
+                    <a href="https://cliffolegprojectfour.github.io/pirateCardDraw/" target="_blank"><img src="./assets/pirateCardDrawGame.jpg" alt="Screenshot of Pirate Card Draw Game website."></a>
+                    <h3>Pirate Card Draw Game</h3>
+                    <p>Partnered jQuery project of a pirate themed card draw game.</p>
+                    <div class="link">
+                        <a href="https://cliffolegprojectfour.github.io/pirateCardDraw/" target="_blank">See the live site</a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="contact">
             <div class="wrapper">
-                <h2>Contact</h2>
+                <h2 id="contact">Contact</h2>
 
                 <form action="#" method="POST" class="contactForm">
                     <label for="name">Name</label>
@@ -98,6 +169,16 @@
                 
                     <button>Submit</button>
                 </form>
+
+                <ul>
+                    <li><a href="https://twitter.com/cliffstonge/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://github.com/cliffstonge/" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/cliffstonge/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+
+                <div class="email">
+                    <a href="mailto:cliffstonge@gmail.com">cliffstonge [at] gmail.com</a>
+                </div>
             </div>
         </section>
     </main>

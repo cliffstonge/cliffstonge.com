@@ -240,15 +240,15 @@ html {
   padding: 0;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-}
-
-img {
-  width: 100%;
-  display: block;
 }
 
 body {
@@ -263,7 +263,7 @@ header {
 }
 
 .headerBackground {
-  background-image: url(.././assets/headerBackground.jpg);
+  background-image: url(.././assets/headerImage.jpg);
   background-size: cover;
   background-position: center;
   height: 92vh;
@@ -276,7 +276,7 @@ header {
 
 .hello h1 {
   font-size: 130px;
-  margin: 0;
+  margin: 0 0 0 -6px;
 }
 
 .hello h2 {
@@ -342,6 +342,7 @@ section {
 
 .aboutImage {
   width: 35%;
+  min-width: 350px;
 }
 
 .aboutDescription {
@@ -353,19 +354,104 @@ section {
   padding: 0 10px 10px 10px;
 }
 
+.aboutDescription .connect {
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 20px;
+  color: #B22725;
+}
+
+.aboutDescription ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutDescription i {
+  font-size: 36px;
+  color: #B22725;
+  padding: 20px;
+}
+
+.divider {
+  background-image: url(.././assets/dividerImage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .skills,
-.contact {
+footer {
   background-color: #333435;
   color: #FFFFFF;
 }
 
-.skills ul {
-  padding-bottom: 100px;
+.skills .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 22.5% 22.5% 22.5% 22.5%;
+      grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+  grid-gap: 40px;
   text-align: center;
 }
 
-.portfolio {
+.skills .grid i {
+  font-size: 80px;
   text-align: center;
+}
+
+.skills .grid p {
+  padding: 10px;
+}
+
+.portfolio .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  grid-gap: 10%;
+  padding-bottom: 140px;
+}
+
+.portfolio .grid .project {
+  background-color: #F8F8F8;
+}
+
+.portfolio .grid h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.portfolio .grid p {
+  padding: 0 20px;
+}
+
+.portfolio .grid .link {
+  padding: 40px 20px 60px 20px;
+}
+
+.contact {
+  background-image: url(.././assets/contactImage.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+}
+
+.contact ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact i {
+  font-size: 60px;
+  padding: 50px 30px;
+  color: #FFFFFF;
 }
 
 .contact form {
@@ -376,12 +462,49 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact form label {
+  margin-bottom: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background-color: #C2C2C3;
+  padding: 12px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+}
+
+.email {
+  text-align: center;
+  margin: 20px;
+}
+
+.email a {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #FFFFFF;
+  padding: 10px 30px;
 }
 
 footer {
-  background-color: #000000;
   font-size: 16px;
-  color: #FFFFFF;
   text-align: center;
   padding: 16px;
 }

@@ -5,15 +5,15 @@
     padding: 0;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
 .wrapper {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-}
-
-img {
-    width: 100%;
-    display: block;
 }
 
 body {
@@ -28,7 +28,7 @@ header {
 }
 
 .headerBackground {
-    background-image: url(.././assets/headerBackground.jpg);
+    background-image: url(.././assets/headerImage.jpg);
     background-size: cover;
     background-position: center;
     height: 92vh;
@@ -37,19 +37,16 @@ header {
 .hello {
     padding-top: 160px;
     color: #FFFFFF;
-}
-
-.hello h1 {
-    font-size: 130px;
-    margin: 0;
-}
-
-.hello h2 {
-    font-size: 80px;
-}
-
-.hello p {
-    font-size: 40px; 
+        h1 {
+            font-size: 130px;
+            margin: 0 0 0 -6px;
+        }
+        h2 {
+            font-size: 80px;
+        }
+        p {
+            font-size: 40px;
+        }
 }
 
 header nav {
@@ -58,19 +55,17 @@ header nav {
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 4px 3px 1px rgba(0, 0, 0, 0.08);
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-header nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #000000;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #000000;
+        }
 }
 
 main h2 {
@@ -92,41 +87,139 @@ section {
 
 .aboutImage {
     width: 35%;
+    min-width: 350px;
 }
 
 .aboutDescription {
     width: 60%;
     line-height: 30px;
+        p {
+            padding: 0 10px 10px 10px;
+        }
+        .connect {
+            font-size: 28px;
+            font-weight: 700;
+            padding-top: 20px;
+            color: #B22725;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        i {
+            font-size: 36px;
+            color: #B22725;
+            padding: 20px;
+        }
 }
 
-.aboutDescription p {
-    padding: 0 10px 10px 10px;
+.divider {
+    background-image: url(.././assets/dividerImage.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.skills, 
-.contact {
+.skills,
+footer {
     background-color: #333435;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
-.skills ul {
-    padding-bottom: 100px;
+.skills .grid {
+    display: grid;
+    grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+    grid-gap: 40px;
     text-align: center;
+        i{
+            font-size: 80px; 
+            text-align: center;
+        }
+        p {
+            padding: 10px;
+        }
 }
 
-.portfolio {
-    text-align: center;
+.portfolio .grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+    padding-bottom: 140px;
+        .project {
+            background-color: #F8F8F8;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            padding: 20px;
+        }
+        p {
+            padding: 0 20px;
+        }
+        .link {
+            padding: 40px 20px 60px 20px;
+        }
+}
+
+.contact {
+    background-image: url(.././assets/contactImage.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        i {
+            font-size: 60px;
+            padding: 50px 30px;
+            color: #FFFFFF;
+        }
 }
 
 .contact form {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+        label {
+            margin-bottom: 10px;
+        }
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        textarea {
+            resize: none;
+        }
+        button {
+            background-color: #C2C2C3;
+            padding: 12px;
+            width: 120px;
+            border: none;
+            border-radius: 5px;
+        }
+}
+
+.email {
+    text-align: center;
+    margin: 20px;
+        a {
+            font-size: 30px;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-align: center;
+            border: 3px solid #FFFFFF;
+            padding: 10px 30px;
+        }
 }
 
 footer {
-    background-color: #000000;
+    // background-color: #000000;
     font-size: 16px;
-    color: #FFFFFF;
+    // color: #FFFFFF;
     text-align: center;
     padding: 16px;
 }
