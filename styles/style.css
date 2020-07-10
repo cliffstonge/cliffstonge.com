@@ -319,16 +319,16 @@ header nav a {
   color: #000000;
 }
 
-main h2 {
+section {
+  padding: 140px 0;
+}
+
+section h2 {
   font-size: 76px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 100px;
-}
-
-section {
-  padding: 140px 0;
 }
 
 .aboutFlex {
@@ -343,6 +343,7 @@ section {
 .aboutImage {
   width: 35%;
   min-width: 350px;
+  padding-bottom: 40px;
 }
 
 .aboutDescription {
@@ -351,7 +352,7 @@ section {
 }
 
 .aboutDescription p {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 10px 30px;
 }
 
 .aboutDescription .connect {
@@ -374,37 +375,37 @@ section {
   padding: 20px;
 }
 
-.divider {
-  background-image: url(.././assets/dividerImage.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .skills,
 footer {
   background-color: #333435;
   color: #FFFFFF;
 }
 
-.skills .grid {
+.skillsGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 22.5% 22.5% 22.5% 22.5%;
-      grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+  -ms-grid-columns: 22% 22% 22% 22%;
+      grid-template-columns: 22% 22% 22% 22%;
   grid-gap: 40px;
   text-align: center;
 }
 
-.skills .grid i {
+.skillsGrid i {
   font-size: 80px;
   text-align: center;
 }
 
-.skills .grid p {
+.skillsGrid p {
   padding: 10px;
 }
 
-.portfolio .grid {
+.divider {
+  background-image: url(.././assets/dividerImage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolioGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 45% 45%;
@@ -413,21 +414,21 @@ footer {
   padding-bottom: 140px;
 }
 
-.portfolio .grid .project {
+.portfolioGrid .project {
   background-color: #F8F8F8;
 }
 
-.portfolio .grid h3 {
+.portfolioGrid h3 {
   font-size: 30px;
   font-weight: 700;
   padding: 20px;
 }
 
-.portfolio .grid p {
+.portfolioGrid p {
   padding: 0 20px;
 }
 
-.portfolio .grid .link {
+.portfolioGrid .link {
   padding: 40px 20px 60px 20px;
 }
 
@@ -462,7 +463,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -478,6 +479,7 @@ footer {
 
 .contact form textarea {
   resize: none;
+  overflow: hidden;
 }
 
 .contact form button {
@@ -507,4 +509,95 @@ footer {
   font-size: 16px;
   text-align: center;
   padding: 16px;
+}
+
+/* Landscape tablet */
+@media (max-width: 940px) {
+  .aboutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutImage {
+    width: 60%;
+  }
+  .aboutDescription {
+    width: 80%;
+  }
+  .skillsGrid {
+    -ms-grid-columns: 44% 44%;
+        grid-template-columns: 44% 44%;
+  }
+}
+
+/* Portrait tablet */
+@media (max-width: 768px) {
+  .hello h1 {
+    font-size: 100px;
+  }
+  .hello h2 {
+    font-size: 50px;
+  }
+  .hello p {
+    font-size: 36px;
+  }
+  header nav a {
+    font-size: 14px;
+  }
+  section {
+    padding: 100px 0;
+  }
+  section h2 {
+    font-size: 60px;
+  }
+  .portfolioGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0px;
+  }
+  .portfolioGrid .project {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .contact form {
+    width: 90%;
+  }
+}
+
+/* Portrait mobile */
+@media (max-width: 480px) {
+  .hello h1 {
+    font-size: 80px;
+  }
+  .hello h2 {
+    font-size: 40px;
+  }
+  .hello p {
+    font-size: 28px;
+  }
+  header nav a {
+    font-size: 12px;
+  }
+  section h2 {
+    font-size: 46px;
+  }
+  .contact i {
+    font-size: 50px;
+  }
+  .email a {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
 }

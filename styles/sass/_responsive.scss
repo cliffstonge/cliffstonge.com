@@ -1,0 +1,92 @@
+/* Landscape tablet */
+@media (max-width: 940px) {
+    .aboutFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutImage {
+        width: 60%;
+    }
+    
+    .aboutDescription {
+        width: 80%;
+    }
+
+    .skillsGrid {
+        grid-template-columns: 44% 44%;
+    }
+}
+
+/* Portrait tablet */
+@media (max-width: 768px) {
+    .hello {
+        h1 {
+            font-size: 100px;
+        }
+        h2 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 36px;
+        }
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 100px 0;
+            h2 {
+                font-size: 60px;
+            }
+    }
+
+    .portfolioGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+        .project {
+            width: 90%;
+            margin-bottom: 50px;
+        }
+    }
+
+    .contact form {
+        width: 90%;
+    }
+}
+
+/* Portrait mobile */
+@media (max-width: 480px) {
+    .hello {
+        h1 {
+            font-size: 80px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 28px;
+        }
+    }
+
+    header nav a {
+        font-size: 12px;
+    }
+
+    section h2 {
+        font-size: 46px;
+    }
+
+    .contact i {
+        font-size: 50px;
+    }
+
+    .email a {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+}
