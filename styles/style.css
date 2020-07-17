@@ -399,12 +399,6 @@ footer {
   padding: 10px;
 }
 
-.divider {
-  background-image: url(.././assets/dividerImage.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .portfolioGrid {
   display: -ms-grid;
   display: grid;
